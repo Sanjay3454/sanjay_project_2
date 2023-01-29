@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANJU</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+
+
+<header>
+
+    <div class="user">
+        <img src="./images/WhatsApp Image 2023-01-28 at 16.17.54.jpg" alt="">
+        <h3 class="name">SANJAY PV</h3>
+        <p class="post">web developer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#portfolio">Skills</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+
+<div id="menu" class="fas fa-bars"></div>
+
+
+<section class="home" id="home">
+
+    <h3>HI THERE !</h3>
+    
+    <div class="wrapper">
+        <div class="static-txt"><h1>I'M <span></span></h1></div>
+        <ul class="dynamic-txts">
+            <li><span>Sanjay</span></li>
+          <li><span>Designer</span></li>
+          <li><span>Developer</span></li>
+          <li><span>YouTuber</span></li>
+        </ul>
+      </div>
+    <p id="about-me-1"> I am a positive, enthusiastic and competent Web Developer who,
+        over the years, <br> has built up a diverse range of skills,
+        qualities and attributes that guarantee I will perform highly
+        in this role
+    </p>
+    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>about</span> me </h1>
+
+<div class="row">
+
+    <div class="info">
+        <h3> <span> name : </span> sanjay pv </h3>
+        <h3> <span> qualification : </span> BSC CS </h3>
+        <h3><span>Hi,iam Sanjay ,Iam From Kannur ,Kerala.
+            I obtained a Degree in computer 
+    science from the College of applied science cheemeni after which 
+    I worked in a- few other jobs related to the IT sector.And then i quit the job because of less skill about web developement
+    But somehow i realised that i have a passion in web developement. And because that
+    I decided to enrol in a full stack web development course. 
+    I'm currently studying mearn stack development at luminar technolab kochi.</span></h3>
+        
+        <a href="https://www.youtube.com/channel/UCp704Em7C3JWT2tSL7yaiKA" target="_blank"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+    </div>
+
+    
+</div>
+
+</section>
+
+
+
+<section class="education" id="education">
+
+<h1 class="heading"> my <span>education</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <span>2016</span>
+        <h3>SSLC</h3>
+        <p>G.H.S.S. MATHAMANGALAM</p>
+    </div>
+
+    <div class="box">
+        <span>2018</span>
+        <h3>PLUS TWO</h3>
+        <p>G.H.S.S. MATHAMANGALAM</p>
+    </div>
+
+    <div class="box">
+        <span>2021</span>
+        <h3>Degree BSc CS</h3>
+        <p>I.H.R.D college of applied science cheemeni</p>
+    </div>
+
+    <div class="box">
+        <span>2022</span>
+        <h3>Luminar intern</h3>
+        <p>MEARN STACK</p>
+    </div>
+
+  
+
+  
+
+</div>
+
+</section>
+
+
+
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> my <span>skills</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="./images/1.1-removebg-preview.png" alt="">
+    </div>
+    <div class="box">
+        <img src="./images/2.2-removebg-preview.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images/3-removebg-preview.png"alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images/4-removebg-preview.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images/5.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./images/6-removebg-preview.png" alt="">
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> me </h1>
+
+<div class="row">
+    <form action="">
+
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+    </form>
+
+</div>
+
+</section>
+
+
+
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+$('#menu').click(function(){
+  $(this).toggleClass('fa-times');
+  $('header').toggleClass('toggle');
+});
+
+$(window).on('scroll load',function(){
+
+  $('#menu').removeClass('fa-times');
+  $('header').removeClass('toggle');
+
+  if($(window).scrollTop() > 0){
+    $('.top').show();
+  }else{
+    $('.top').hide();
+  }
+
+});
+
+
+
+
+});
+</script>
+
+</body>
+</html>
